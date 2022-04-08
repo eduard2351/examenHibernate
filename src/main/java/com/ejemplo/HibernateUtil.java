@@ -1,5 +1,4 @@
-package com.ejemplo.IntroHibernate;
-
+package com.ejemplo;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -10,8 +9,7 @@ public class HibernateUtil {
 	private static SessionFactory construirSessionFactory() {
 		SessionFactory sf = null;
 		try {
-			sf=new Configuration().configure().buildSessionFactory();
-			System.out.println(sf);
+			sf = new Configuration().configure().buildSessionFactory();
 			return sf;
 		} catch (Exception e) {
 			e.printStackTrace();

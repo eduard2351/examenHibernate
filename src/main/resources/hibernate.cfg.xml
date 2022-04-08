@@ -8,8 +8,8 @@
 	<session-factory>
 		<!-- configuracion de la conexion -->
 		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/educomser</property>
-		<property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/instituto</property>
+		<property name="hibernate.connection.username">postgres</property>
 		<property name="hibernate.connection.password">eduard2351</property>
 
 
@@ -18,7 +18,11 @@
 
 
 		<!-- anotaciones de las clases q se usaran -->
-		<mapping class="com.ejemplo.IntroHibernate.Estudiante" />
+		<mapping class="com.ejemplo.entidadesbd.Estudiante" />
+		<mapping class="com.ejemplo.entidadesbd.Telefono" />
+		<mapping class="com.ejemplo.entidadesbd.MateriaCursada" />
+		<mapping class="com.ejemplo.entidadesbd.TelefonoDetalles" />
+		<mapping class="com.ejemplo.entidadesbd.Materia" />
 
 	</session-factory>
 </hibernate-configuration>        
